@@ -14,7 +14,9 @@ class Report{
     public function getData(){
         return "Data";
     }
-
+    /*
+    * нарушение 1 принципа солид
+    */
     public function renderReport(){
         echo $this->getDoctor().'<br/>'. $this->getPatient().'<br/>'. $this->getData().'<br/>'
     }
