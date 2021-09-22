@@ -32,7 +32,7 @@ class Report
     /*
     * нарушение 1 принципа солид
     */
-    public function save()
+  /*  public function save()
     {
         $filename = 'report' . $this->getDoctor() . ' - ' . $this->getPatient() . '.txt';
         file_put_contents($filename, $this->renderReport()); // записываем содержимое отчета
@@ -41,7 +41,7 @@ class Report
     public function export()
     {
         //
-    }
+    }*/
 }
 /*
 $obj = new Report;
