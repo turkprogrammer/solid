@@ -40,7 +40,7 @@ echo $rect->area();
  * 
  */
 define("TEMPLATE", __DIR__);
-$layout = new App\L\Ex\PartialView();///Error add views ,inherited classes can override the methods of the parent class, but only so as not to change the existing functionality in the client code.
+$layout = new App\L\Ex\CompositeView();///Error add views ,inherited classes can override the methods of the parent class, but only so as not to change the existing functionality in the client code.
 
 $header = new \App\L\Ex\PartialView('header.php');
 $header->content = "Header content";
