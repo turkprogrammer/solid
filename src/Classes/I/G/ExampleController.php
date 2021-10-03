@@ -6,9 +6,17 @@
  * and open the template in the editor.
  */
 
-namespace App\I\B;
+namespace App\I\G;
 
-interface Orderable {
+/**
+ * Description of ExampleController
+ *
+ * @author Yunus
+ */
+class ExampleController {
 
-    function getComment();
+    public function __construct(Paymentinterface $order) {
+        
+    }
+
 }

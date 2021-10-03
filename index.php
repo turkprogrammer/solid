@@ -60,5 +60,12 @@ $layout->addViews([
 
 echo $layout->render();
 */
-$order = new App\I\B\QuickOrder();
-echo $order->getClientInfo();
+
+//The client should NOT depend on methods that he does NOT use!
+/*$order = new App\I\B\QuickOrder();
+echo $order->getClientInfo();*/
+
+$order = new \App\I\B\QuickOrder();
+$order2 = new App\I\G\Order();
+
+$example = new \App\I\G\ExampleController($order2);

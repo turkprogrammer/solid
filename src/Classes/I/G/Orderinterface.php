@@ -6,9 +6,15 @@
  * and open the template in the editor.
  */
 
-namespace App\I\B;
+namespace App\I\G;
 
-interface Orderable {
+/**
+ *
+ * @author Yunus
+ */
+interface Orderinterface {
 
-    function getComment();
+    function getTotlaPrice();
+
+    function getClientInfo();
 }
