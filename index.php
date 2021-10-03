@@ -39,6 +39,7 @@ echo $rect->area();
  * обьекты в любом приложении должны быть заменяемы их наследника без изменения их клиентского кода!
  * 
  */
+/*
 define("TEMPLATE", __DIR__);
 $layout = new App\L\Ex\CompositeView();///Error add views ,inherited classes can override the methods of the parent class, but only so as not to change the existing functionality in the client code.
 
@@ -58,3 +59,6 @@ $layout->addViews([
 ]);
 
 echo $layout->render();
+*/
+$order = new App\I\B\QuickOrder();
+echo $order->getClientInfo();
